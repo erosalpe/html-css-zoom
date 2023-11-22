@@ -108,7 +108,7 @@ div.l-side > span{
 }
 
 .action-bar span{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .center{
@@ -127,4 +127,10 @@ div.l-side > span{
 
 .white span svg{
     fill: white;
+}
+
+.center span,
+.l-side span,
+.grid-buttons span{
+    text-transform: capitalize;
 }
