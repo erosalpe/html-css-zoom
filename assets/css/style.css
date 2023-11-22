@@ -37,7 +37,6 @@
 
 
 .zoom-webcam{
-    border: 1px solid red;
     --gap: 5px;
     --columns: 7;
     flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
@@ -69,9 +68,9 @@
     padding-inline: 5vw;
     padding-top: 7vh;
     background-color: #000000;
-    overflow-y: scroll;
+    overflow: auto;
     height: 90vh;
-    padding-bottom: 10vh;
+    padding-bottom: 9vh;
 }
 
 
@@ -131,6 +130,17 @@ div.l-side > span{
 
 .center span,
 .l-side span,
-.grid-buttons span{
+.grid-buttons span,
+.r-side{
     text-transform: capitalize;
+}
+
+.r-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4a4a4a;
+    color: red;
+    padding-inline: 30px;
+
 }
