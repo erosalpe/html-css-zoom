@@ -11,8 +11,10 @@
 
 .zoom-webcam{
     border: 1px solid red;
-    width: calc(100% / 7);
-    display: inline-block;
+    --gap: 5px;
+    --columns: 7;
+    flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+    display: flex;
     position: relative;
 }
 
@@ -39,4 +41,9 @@
     flex-wrap: wrap;
     column-gap: 5px;
     row-gap: 10px;
+    padding-inline: 5vw;
+    padding-top: 7vh;
+    background-color: #000000;
+    overflow-y: scroll;
+    height: 90vh;
 }
