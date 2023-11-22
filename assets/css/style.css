@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 .web-app{
@@ -14,8 +15,6 @@
     position: absolute;
     right: 20px;
     top: 0;
-    color: white;
-    fill: white;
     display: flex;
     gap: 10px;
     padding-top: 10px;
@@ -30,6 +29,12 @@
     vertical-align: middle;
     gap: 5px;
 }
+
+.zoom-main svg,
+.grid-buttons svg{
+    fill: white;
+}
+
 
 .zoom-webcam{
     border: 1px solid red;
@@ -51,11 +56,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    color: white;
     background-color: rgba(121, 121, 121, 0.3);
     padding: 5px;
     text-transform: capitalize;
-    fill: white;
 }
 
 .zoom-main{
@@ -71,7 +74,57 @@
     padding-bottom: 10vh;
 }
 
+
 .action-bar{
     height: 10vh;
     background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+}
+
+.l-side{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.l-side svg{
+    fill: white;
+}
+
+div.l-side > span{
+    font-size: 15px;
+}
+
+.action-bar-button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.action-bar-button svg{
+    font-size: 30px;
+}
+
+.action-bar span{
+    font-size: 20px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.action-bar-button svg{
+    fill: white;
+}
+
+.action-bar-button.green > svg{
+    fill: green;
+}
+
+.white span svg{
+    fill: white;
 }
