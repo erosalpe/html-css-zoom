@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.web-app{
+    height: 100vh;
+    width: 100%;
+}
+
+.zoom-webcam{
+    border: 1px solid red;
+    width: calc(100% / 7);
+    display: inline-block;
+    position: relative;
+}
+
+.zoom-webcam img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.zoom-webcam span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(121, 121, 121, 0.3);
+    padding: 5px;
+    text-transform: capitalize;
+    fill: white;
+}
+
+.zoom-main{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+}
