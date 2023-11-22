@@ -7,6 +7,28 @@
 .web-app{
     height: 100vh;
     width: 100%;
+    position: relative;
+}
+
+.grid-buttons{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: white;
+    fill: white;
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+.grid-buttons span:first-child, .grid-buttons span:last-child{
+    background-color: rgba(121, 121, 121, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    vertical-align: middle;
+    gap: 5px;
 }
 
 .zoom-webcam{
@@ -46,4 +68,10 @@
     background-color: #000000;
     overflow-y: scroll;
     height: 90vh;
+    padding-bottom: 10vh;
+}
+
+.action-bar{
+    height: 10vh;
+    background-color: #222222;
 }
