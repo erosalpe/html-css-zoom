@@ -71,6 +71,7 @@
     overflow: auto;
     height: 90vh;
     padding-bottom: 9vh;
+    justify-content: center;
 }
 
 
